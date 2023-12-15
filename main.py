@@ -52,7 +52,7 @@ dataloader_source = torch.utils.data.DataLoader(
     dataset=dataset_source,
     batch_size=batch_size,
     shuffle=True,
-    num_workers=8)
+    num_workers=4)
 
 train_list = os.path.join(target_image_root, 'mnist_m_train_labels.txt')
 
@@ -66,7 +66,7 @@ dataloader_target = torch.utils.data.DataLoader(
     dataset=dataset_target,
     batch_size=batch_size,
     shuffle=True,
-    num_workers=8)
+    num_workers=4)
 
 # load model
 
